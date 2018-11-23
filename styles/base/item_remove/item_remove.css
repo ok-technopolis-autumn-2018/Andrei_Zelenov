@@ -1,0 +1,38 @@
+   .item_remove {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: none;
+        border: none; 
+        padding: 0;
+        margin: 0;
+        float: right;
+        position: relative;
+        outline: none;
+        visibility: hidden;
+
+        }
+
+        .item_remove_icon {
+            width: 18px;
+            height: 18px;
+            background: url('../../../img/icons/close.png') no-repeat 0 0;
+            position: absolute;
+            }
+        @media (-webkit-min-device-pixel-ratio: 1.5),
+            (min-resolution: 120dpi),
+            (min-resolution: 1.5dppx) {
+            .item_remove_icon {
+                background: url(../../../img/icons/close@2x.png) no-repeat 0 0;
+                background-size: 18px 18px
+                }
+            }
+    
+        .todos-list_item:hover .item_remove {
+            visibility: visible;
+            opacity: 0.5;
+            }
+
+        .todos-list_item:hover .item_remove:hover {
+            opacity: 1.0;
+            }

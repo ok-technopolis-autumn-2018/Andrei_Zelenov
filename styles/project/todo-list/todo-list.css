@@ -1,0 +1,49 @@
+.todos-list {
+    height: 336px;
+    }
+
+    .todos-list_item {
+        padding: 16px;
+        height: 36px;
+        border-bottom: 1px solid #ccc;
+
+        }
+        .todos-list_item:after {
+            content: '';
+            clear: both;
+            display: table;
+            }
+        .todos-list_item:hover {
+            background: rgba(230, 230, 230, .2);
+        }
+
+        .todos-list_item_ready-marker {
+            position: relative;
+
+            float: left;
+            margin-right: 16px;
+            }
+
+        .todos-list_item_text-w {
+            height: 36px;
+            overflow: hidden;
+            }
+
+            .todos-list_item_text {
+                box-sizing: border-box;
+                border: 0;
+                background: none;
+                resize: none;
+                color: #666;
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 200;
+                padding-right: 12px;
+                margin-top: 0;
+                outline: none;
+                }
+
+            .__checked .todos-list_item_text {
+                text-decoration: line-through;
+                color: #ccc;
+                }

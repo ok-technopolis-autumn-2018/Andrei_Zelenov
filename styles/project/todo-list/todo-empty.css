@@ -1,0 +1,12 @@
+.__empty .todos-list,
+.__empty .todos-toolbar,
+.__empty .todo-creator_check-all,
+.__empty:before,
+.__empty:after
+{
+    display: none;
+}
+
+.__empty .todo-creator_text-input-w {
+    margin-left: 40px;
+    }
